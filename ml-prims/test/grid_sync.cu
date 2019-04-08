@@ -128,7 +128,8 @@ const std::vector<GridSyncInputs> inputs = {
   {{2, 2, 2}, {32, 2, 1}, true, ACROSS_X},
   {{2, 1, 1}, {32, 2, 4}, true, ACROSS_X},
   {{2, 2, 1}, {32, 2, 4}, true, ACROSS_X},
-  {{2, 2, 2}, {32, 2, 4}, true, ACROSS_X}};
+  {{2, 2, 2}, {32, 2, 4}, true, ACROSS_X},
+  {{32, 256, 1}, {1, 1, 1}, true, ACROSS_X}};
 TEST_P(GridSyncTest, Result) {
   size_t len = computeOutLen();
   // number of blocks atomicAdd'ing the same location
